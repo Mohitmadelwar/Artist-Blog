@@ -16,10 +16,10 @@ const Cards = ({ searchQuery }) => {
       try {
         let response;
         if (searchQuery) {
-          response = await axios.get(`http://localhost:5000/api/cards/search?q=${searchQuery}`);
+          response = await axios.get(`https://artist-blog-backend.vercel.app/api/cards/search?q=${searchQuery}`);
           setCards(response.data);
         } else {
-          response = await axios.get('http://localhost:5000/api/cards');
+          response = await axios.get('https://artist-blog-backend.vercel.app/api/cards');
           setCards(response.data);
         }
         setLoading(false);
