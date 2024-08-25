@@ -1,0 +1,31 @@
+.navbar-container{
+background-color: black; 
+  width:100%;
+
+}
+.ms-large {
+  width: 30px; 
+  height: auto; 
+
+}
+
+.text-white {
+  color: white;
+}
+.custom-margin-right {
+  margin-right: 200px; 
+  width:180px;
+  height:35px;
+  color:white;
+  background-color:#1A1A1A;
+  
+}
+
+.ms-large {
+  margin-left: 60px;
+}
+
+.vertical-bar {
+  font-size: 24px; 
+  color: white; 
+}

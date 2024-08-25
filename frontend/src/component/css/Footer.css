@@ -1,0 +1,47 @@
+.footer {
+  background-color: #000000;
+  margin: 0;
+  min-height: 60vh;
+  min-width: 100%;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 5px;
+  padding: 10px;
+  margin-left: 100px;
+}
+.footer-grid div {
+  text-align: left;
+  font-size: 25px;
+  flex-direction: row;
+  padding-top: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-grid div h5 {
+  font-weight: 600;
+  padding-top: 25px;
+  font-size: large;
+}
+
+.footer-logo {
+  margin-top: 180px;
+  margin-left: 50px;
+}
+
+.footer-logo h6 {
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.footer-logo img {
+  width: 30px;
+  height: auto;
+  padding-bottom: 10px;
+  padding: auto;
+}
+
+
+

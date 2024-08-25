@@ -1,0 +1,37 @@
+.detail{
+background-color:black
+}
+
+
+
+.card-detail {
+   
+
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding-left:20px;
+    padding-right:20px;
+
+  }
+  
+  .card-detail-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+    padding-top:20px
+  }
+  
+  .card-detail h1 {
+    margin: 20px 0;
+    font-size: 2em;
+    color: white;
+
+  }
+  
+  .card-detail p {
+    font-size: 1.2em;
+    color: white;
+  }
+  
