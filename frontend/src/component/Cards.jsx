@@ -20,6 +20,7 @@ const Cards = ({ searchQuery }) => {
           setCards(response.data);
         } else {
           response = await axios.get('https://artist-blog-backend.vercel.app/api/cards');
+
           setCards(response.data);
         }
         setLoading(false);

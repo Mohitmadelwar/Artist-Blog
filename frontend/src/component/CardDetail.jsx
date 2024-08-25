@@ -13,7 +13,7 @@ const CardDetail = () => {
   useEffect(() => {
     const fetchCard = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/cards/${id}`);
+        const response = await axios.get(`https://artist-blog-backend.vercel.app/api/cards/${id}`);
         setCard(response.data);
         setLoading(false);
       } catch (err) {

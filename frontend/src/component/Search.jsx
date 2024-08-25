@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./css/Search.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 const Search = ({ onSearch }) => {
   const [query, setQuery] = useState("");
@@ -14,7 +14,7 @@ const Search = ({ onSearch }) => {
     if (value.trim() !== "") {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/cards/search?q=${value}`
+          `https://artist-blog-backend.vercel.app/api/cards/search?q=${value}`
         );
         setSuggestions(response.data);
       } catch (error) {
