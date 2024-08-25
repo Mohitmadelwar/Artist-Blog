@@ -9,20 +9,17 @@ const Cards = ({ searchQuery }) => {
   const [cards, setCards] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const apiUrl = process.env.REACT_APP_API_URL;
+
 
   useEffect(() => {
     const fetchCards = async () => {
       try {
         let response;
         if (searchQuery) {
-          // response = await axios.get(`http://localhost:5000/api/cards/search?q=${searchQuery}`);
-          response = await axios.get(`${apiUrl}/api/cards/search?q=${searchQuery}`);
+          response = await axios.get(`http://localhost:5000/api/cards/search?q=${searchQuery}`);
           setCards(response.data);
         } else {
-          // response = await axios.get('http://localhost:5000/api/cards');
-          response = await axios.get(`${apiUrl}/api/cards`);
-
+          response = await axios.get('http://localhost:5000/api/cards');
           setCards(response.data);
         }
         setLoading(false);
@@ -33,7 +30,7 @@ const Cards = ({ searchQuery }) => {
     };
 
     fetchCards();
-  }, [searchQuery , apiUrl]);
+  }, [searchQuery]);
   if (loading) {
     return (
       <div className="centered-container">
